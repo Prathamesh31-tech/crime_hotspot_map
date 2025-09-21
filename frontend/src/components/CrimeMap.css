@@ -1,0 +1,132 @@
+.crime-map-container {
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* 🔴 Heading full width with red background */
+.map-heading {
+  margin-top: 10px;
+  width: 100%;
+  height: 9vh; /* 9% of viewport height */
+  background-color: rgb(2, 2, 87);
+  color: white;
+  font-size: 1.8rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* Map container full width */
+.map-container-wrapper {
+  width:100%;
+  margin-bottom: 10px;
+ 
+}
+
+/* Map responsive height */
+.crime-map {
+  width: 100%;
+  height: 60vh;
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+
+.summary-section {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.summary-card {
+  flex: 1;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  backdrop-filter: blur(8px); /* frosted glass blur */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+.summary-card h3 {
+  margin: 0 0 10px;
+}
+
+.summary-card p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.summary-card.crime {
+  color: #cc0000;
+}
+
+.summary-card.normal {
+  color: #00b050;
+}
+
+.summary-card.total {
+  color: #333;
+}
+
+.location-search {
+  padding: 12px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: end
+
+}
+
+.location-search input {
+  width: 50%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.location-search button {
+  margin-left: 5px;
+  font-size: 15px;
+  background-color: #3a00cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.location-search button:hover {
+  background-color: #990000;
+}
+
+/* Breaking news banner */
+.news {
+  background: #b30000;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  margin-bottom: 55vh;
+}
+
+.news .live {
+  background: yellow;
+  color: red;
+  padding: 3px 6px;
+  margin-right: 10px;
+  animation: blink 1s infinite;
+}

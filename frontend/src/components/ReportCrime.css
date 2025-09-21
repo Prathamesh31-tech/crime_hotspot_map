@@ -1,0 +1,101 @@
+.report-form-container {
+  width: 90%; /* takes 90% of screen width */
+  max-width: 700px; /* caps at 600px for large screens */
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  backdrop-filter: blur(8px); /* blur effect for frosted glass */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  font-family: "Segoe UI", sans-serif;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+@media (max-width: 480px) {
+  .report-form-container {
+    padding: 15px;
+  }
+}
+
+
+
+.report-form h2 {
+  text-align: center;
+  color: #cc0000; /* dark red heading */
+  margin-bottom: 20px;
+}
+
+.report-form textarea {
+  width: 100%;
+  max-width: 100%; /* prevents overflow on small screens */
+  height: 120px;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #cc0000; /* red border for focus */
+  border-radius: 8px;
+  color: #333;
+  resize: vertical;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  box-sizing: border-box; /* ensures padding/border included in width */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+}
+
+.report-form button {
+  width: 100%;
+  padding: 12px;
+  background: #cc0000; /* red button */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.report-form button:hover {
+  background: #a30000;
+}
+
+.result-box {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result-box.crime {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid #cc0000;
+  color: #cc0000;
+}
+
+.result-box.normal {
+  background: rgba(0, 200, 100, 0.1);
+  border: 1px solid #00b050;
+  color: #00b050;
+}
+
+.result-box.error {
+  background: rgba(255, 165, 0, 0.1);
+  border: 1px solid orange;
+  color: orange;
+}

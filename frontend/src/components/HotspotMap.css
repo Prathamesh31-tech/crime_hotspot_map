@@ -1,0 +1,52 @@
+/* Breaking news banner */
+.news-banner {
+  background: #b30000;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.news-banner .live {
+  background: yellow;
+  color: red;
+  padding: 3px 6px;
+  margin-right: 10px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
+}
+
+/* Radar danger icon styles */
+.radar-container {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.radar-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+}
+
+.radar-sweep {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,0,0,0.3) 0%, transparent 70%);
+  animation: sweep 2s infinite linear;
+}
+
+@keyframes sweep {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
